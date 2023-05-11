@@ -42,10 +42,10 @@ The game provides the following buttons to control the race:
 6. The Motion class implements the Runnable interface and represents the motion of a car. It has a run method that executes the car's movement by calling the move method.
 7. The move method defines the car's movement logic. It calculates the car's current position, the goal's position, and a random speed. The car is then moved incrementally by updating its location. The panel is revalidated and repainted to show the updated position. If the car reaches the goal, the race is stopped, and the winning car is displayed in the console. The method uses recursion to continuously move the car at regular intervals until it reaches the goal.
 8. Several inner classes are defined to handle button events:
-*The JButtonListener class implements the ActionListener interface and handles the start button's action. It creates instances of the Motion class for both cars, creates and starts the corresponding threads for each car.
-*The StopListener class implements the ActionListener interface and handles the stop button's action. It stops the threads responsible for car motion.
-*The RestartListener class implements the ActionListener interface and handles the restart button's action. It stops the threads, resets the car positions, and updates the panel to reflect the changes.
-*The SleepListener class implements the ActionListener interface and handles the sleep button's action. It pauses the threads for 5000 milliseconds (5 seconds).
++The JButtonListener class implements the ActionListener interface and handles the start button's action. It creates instances of the Motion class for both cars, creates and starts the corresponding threads for each car.
++The StopListener class implements the ActionListener interface and handles the stop button's action. It stops the threads responsible for car motion.
++The RestartListener class implements the ActionListener interface and handles the restart button's action. It stops the threads, resets the car positions, and updates the panel to reflect the changes.
++The SleepListener class implements the ActionListener interface and handles the sleep button's action. It pauses the threads for 5000 milliseconds (5 seconds).
 
 ## License
 
